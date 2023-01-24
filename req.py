@@ -1,6 +1,18 @@
 import requests
 
-response = requests.get("https://httpbin.org/get")
+params = {
+    "name": "Joshua",
+    "age" : 21
+}
+
+payload = {
+    "name": "Joshua",
+    "age" : 21
+}
+
+response = requests.post("https://httpbin.org/post", data=payload)
+
+print(response.url)
 
 print(response.status_code)
 print("      ")
