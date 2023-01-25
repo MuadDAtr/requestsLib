@@ -1,9 +1,10 @@
 import requests
 
-response = requests.get("https://httpbin.org/status/300")
+response = requests.get("https://httpbin.org/status/204")
 
 
-if response.status_code == requests.codes.not_found:
-    print("Page not found")
+if response.status_code == requests.codes.no_content:
+    print("NO CONTENT")
 else: 
     print(response.status_code)
+    
