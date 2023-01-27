@@ -4,4 +4,4 @@ r = requests.get("https://httpbin.org/user-agent")
 
 print(r.text)
 print(" ")
-print(r.headers['Content-Type'])
+print(r.headers)
